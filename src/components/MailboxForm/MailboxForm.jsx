@@ -24,13 +24,13 @@ navigate('/mailboxes')
   }
   return (
 <>
-<h2>New Mailbox</h2>
+<h1>New Mailbox</h1>
 <form onSubmit={handleSubmit} >
 <label htmlFor="boxOwner">Enter a Boxholder</label>
-<input type="text" name='boxOwner' id='boxOwner' value={formData.boxOwner} onChange={handleChange} />
+<input type="text" name='boxOwner' id='boxOwner' value={formData.boxOwner} onChange={handleChange} required />
 
 <label htmlFor="boxSize">Select a Box Size</label>
-<select name="boxSize" id='boxSize' value={formData.boxSize}  onChange={handleChange}>
+<select name="boxSize" id='boxSize' value={formData.boxSize}  onChange={handleChange} required>
   <option value="">---Select one---</option>
     <option value="large">Large</option>
     <option value="medium">Meduim</option>

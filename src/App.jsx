@@ -24,10 +24,10 @@ const handleMailboxes =(formData)=>{
     
     <NavBar/>
     <Routes>
-      <Route path="/" element={<h2>Post Office</h2>}/>
+      <Route path="/" element={<h1>Post Office</h1>}/>
       <Route path="/new-mailbox" element={<MailboxForm mailboxes={mailboxes} handleMailboxes={handleMailboxes}/>} />
       <Route path="/mailboxes" element={<MailboxList mailboxes={mailboxes}/>}/>
-      <Route path="/mailboxes/:mailboxId" element={<MailboxDetails />}/>  
+      <Route path="/mailboxes/:mailboxId" element={<MailboxDetails mailboxes={mailboxes} />}/>  
       <Route path="*" element={<h1>Post Office</h1>}/>
     </Routes>
   
