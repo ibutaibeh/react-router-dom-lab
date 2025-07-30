@@ -52,3 +52,8 @@ button {
   gap: 10px;
   
 }
+
+.mailbox-list{
+  display: flex;
+  flex-direction: column;
+}
